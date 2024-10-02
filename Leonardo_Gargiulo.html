@@ -3,117 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Logros</title>
+    <title>Perfil de Diego Escudero</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 40px;
-        }
-
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-
-        .stat {
-            flex: 1;
-            margin: 0 15px;
-        }
-
-        .stat h2 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .stat p {
-            font-size: 18px;
-            color: #777;
-        }
-
-        .stat-blue {
-            color: #4A90E2;
-        }
-
-        .stat-pink {
-            color: #F53A82;
-        }
-
-        .newsletter {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 40px;
+            height: 100vh;
+            background-color: #f7f7f7;
         }
 
-        .newsletter input[type="email"] {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-info {
+            text-align: center;
+            width: 40%;
+        }
+
+        .profile-info img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+
+        .profile-info h1 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: 50%;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
             padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px 0 0 5px;
-            outline: none;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            background-color: #eaeaea;
+            transition: background-color 0.3s ease;
         }
 
-        .newsletter button {
-            padding: 10px 20px;
-            background-color: #4A90E2;
-            border: none;
+        .links a:hover {
+            background-color: #dcdcdc;
+        }
+
+        .links img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .spotify {
+            background-color: #1DB954;
             color: white;
-            font-size: 16px;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
         }
 
-        .newsletter button:hover {
-            background-color: #357ABD;
+        .twitter {
+            background-color: #00acee;
+            color: white;
+        }
+
+        .follow-button {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-left: auto;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>He logrado monetizar mi pasión a través de desarrollar mi marca personal y ayudar a otras personas a hacerlo:</h1>
-
-        <div class="stats">
-            <div class="stat">
-                <h2 class="stat-blue">+1.7M</h2>
-                <p>+1.7 Millones de suscriptores y seguidores</p>
-            </div>
-
-            <div class="stat">
-                <h2 class="stat-pink">+100M</h2>
-                <p>+100 Millones de reproducciones</p>
-            </div>
-
-            <div class="stat">
-                <h2>Multi-Plataforma</h2>
-                <p>Grandes audiencias en todas las plataformas de Redes Sociales</p>
-            </div>
+        <div class="profile-info">
+            <img src="profile-picture.jpg" alt="Diego Escudero">
+            <h1>Diego Escudero</h1>
         </div>
-
-        <div class="newsletter">
-            <input type="email" placeholder="Suscríbete a la newsletter">
-            <button>Mi pagina</button>
+        <div class="links">
+            <a href="#">
+                <img src="spotify-icon.png" alt="Spotify"> My Spotify 🎶
+                <span class="follow-button">Follow</span>
+            </a>
+            <a href="#" class="twitter">
+                <img src="twitter-icon.png" alt="Twitter"> Twitter @diegogoo_06
+                <span class="follow-button">Follow</span>
+            </a>
+            <a href="#">
+                <img src="threads-icon.png" alt="Threads"> Threads
+            </a>
+            <a href="#">
+                <img src="tiktok-icon.png" alt="TikTok"> TikTok @diegoscudero
+                <span class="follow-button">Follow</span>
+            </a>
+            <a href="#">
+                <img src="club-icon.png" alt="Club Ocean"> Club Ocean 🌊
+            </a>
+            <a href="#">
+                <img src="tips-icon.png" alt="Tips"> Tips 💡
+            </a>
         </div>
     </div>
-
 </body>
 </html>
-
