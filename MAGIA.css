@@ -1,48 +1,44 @@
+/* Estilo general */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #111;
-    color: white;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-nav {
     background-color: black;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+}
+
+/* Contenedor de los botones */
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 15px; /* Espacio entre los botones */
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+/* Estilo base de los botones */
+.button {
     color: white;
-    font-weight: bold;
-}
-
-.title {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-main img {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid white;
     border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Tamaños específicos */
+.large {
+    padding: 10px 30px;
+}
+
+.small {
+    padding: 5px 10px;
+}
+
+/* Efecto hover */
+.button:hover {
+    background-color: white;
+    color: black;
 }
